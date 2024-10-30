@@ -1,47 +1,39 @@
-LLM Model Deployment Guide Index
-Welcome to the LLM Model Deployment Guide. This documentation is designed for cloud hosting providers and enterprises planning to deploy LLM models for inference at scale. Whether you're using pre-built models or bringing your own containers, these guides will help you plan, deploy, and operate your LLM infrastructure.
-Core Documents
 
-Requirements Gathering Guide
+# LLM Model Deployment Guide Index
 
-Essential checklist for collecting deployment requirements from customers
-Helps determine infrastructure needs and cost estimates
+Welcome to the **LLM Model Deployment Guide**. This documentation is designed for cloud hosting providers and enterprises planning to deploy LLM models for inference at scale. Whether you're using pre-built models or bringing your own containers, these guides will help you plan, deploy, and operate your LLM infrastructure.
 
+## Core Documents
 
-System Sizing Guide
+### Requirements Gathering Guide
+- **Purpose**: Essential checklist for collecting deployment requirements from customers.
+- **Outcome**: Helps determine infrastructure needs and cost estimates.
 
-Calculate required compute resources and estimate costs
-Match infrastructure to performance requirements
+### System Sizing Guide
+- **Purpose**: Calculate required compute resources and estimate costs.
+- **Outcome**: Match infrastructure to performance requirements.
 
+### Deployment Models Guide
+- **Purpose**: Choose between online and offline inference patterns.
+- **Outcome**: Understand tradeoffs between different deployment strategies.
 
-Deployment Models Guide
+### Infrastructure Setup Guide
+- **Purpose**: Configure containers and runtime environments.
+- **Outcome**: Set up networking, storage, and security components.
 
-Choose between online and offline inference patterns
-Understand tradeoffs between different deployment strategies
+### Performance Optimization Guide
+- **Purpose**: Tune models and infrastructure for optimal performance.
+- **Outcome**: Monitor and improve key metrics.
 
+### Operations Guide
+- **Purpose**: Manage deployed models in production.
+- **Outcome**: Handle scaling, monitoring, and maintenance.
 
-Infrastructure Setup Guide
+## Quick Decision Guide
 
-Configure containers and runtime environments
-Set up networking, storage, and security components
-
-
-Performance Optimization Guide
-
-Tune models and infrastructure for optimal performance
-Monitor and improve key metrics
-
-
-Operations Guide
-
-Manage deployed models in production
-Handle scaling, monitoring, and maintenance
-
-
-
-Quick Decision Guide
 Use this flowchart to determine which documents to reference:
-mermaid
+
+```mermaid
 graph TD
     A[Start] --> B{Own Model?}
     B -->|Yes| C[Container Requirements]
@@ -53,31 +45,22 @@ graph TD
     F --> H[Infrastructure Setup]
     G --> H
     H --> I[Operations]
+```
 
-Common Deployment Scenarios
+## Common Deployment Scenarios
 
-Custom Model in Container
+### Custom Model in Container
+- **Start with**: Requirements → Sizing → Infrastructure.
+- **Focus on**: Container optimization and security.
 
-Start with Requirements → Sizing → Infrastructure
-Focus on container optimization and security
+### Marketplace Model
+- **Start with**: Deployment Models → Performance.
+- **Focus on**: Integration and scaling.
 
+### High-Performance Inference
+- **Start with**: Requirements → Performance → Operations.
+- **Focus on**: Latency optimization.
 
-Marketplace Model
-
-Start with Deployment Models → Performance
-Focus on integration and scaling
-
-
-High-Performance Inference
-
-Start with Requirements → Performance → Operations
-Focus on latency optimization
-
-
-Batch Processing
-
-Start with Deployment Models → Infrastructure
-Focus on throughput optimization
-
-
-
+### Batch Processing
+- **Start with**: Deployment Models → Infrastructure.
+- **Focus on**: Throughput optimization.
